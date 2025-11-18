@@ -98,6 +98,7 @@ Products -> Test or CMD + U
 **Camilla Øye** [Github Profile] (https://github.com/Camilla Sivertsen)
 **Luna** [Github Profile] (https://github.com/lunagudem)
 **Sara Gjerløw** [GitHub Profile](https://github.com/SaraGjerlow)
+**Mathias Gundersen** [GitHub Profile](https://github.com/saltonese)
 **Fabian Feiler** [Github Profile] (https://github.com/fabianfeiler)
 ---
 
