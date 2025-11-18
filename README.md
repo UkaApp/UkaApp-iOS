@@ -95,7 +95,7 @@ Products -> Test or CMD + U
 
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)
 **Luna** [Github Profile] (https://github.com/lunagudem)
-
+**Mathias Gundersen** [GitHub Profile](https://github.com/saltonese)
 ---
 
 _Developed for Samfundet i Ås at Ås_
