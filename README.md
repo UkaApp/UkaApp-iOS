@@ -94,7 +94,7 @@ Products -> Test or CMD + U
 ### 👥 Collaborator(s)
 
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)
-**Luna Gudem** [Github Profile] (https://github.com/lunagudem)
+**Luna** [Github Profile] (https://github.com/lunagudem)
 
 ---
 
