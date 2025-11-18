@@ -99,6 +99,7 @@ Products -> Test or CMD + U
 **Sara Gjerløw** [GitHub Profile](https://github.com/SaraGjerlow)  
 **Mathias Gundersen** [GitHub Profile](https://github.com/saltonese)  
 **Fabian Feiler** [Github Profile] (https://github.com/fabianfeiler)  
+**Camilla Øye** [Github Profile] (https://github.com/CamillaSivertsen)  
 
 ---
 
