@@ -96,6 +96,7 @@ Products -> Test or CMD + U
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)
 **Luna** [Github Profile] (https://github.com/lunagudem)
 **Sara Gjerløw** [GitHub Profile](https://github.com/SaraGjerlow)
+**Fabian Feiler** [Github Profile] (https://github.com/fabianfeiler)
 
 ---
 
