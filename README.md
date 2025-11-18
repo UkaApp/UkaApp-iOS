@@ -94,14 +94,11 @@ Products -> Test or CMD + U
 ### 👥 Collaborator(s)
 
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)
-<<<<<<< HEAD
 **Luna Gudem** [Github Profile] (https://github.com/lunagudem)
 **Camilla Øye** [Github Profile] (https://github.com/Camilla Sivertsen)
-=======
 **Luna** [Github Profile] (https://github.com/lunagudem)
 **Sara Gjerløw** [GitHub Profile](https://github.com/SaraGjerlow)
->>>>>>> 9fb1d895175264af9814539be488635219377c8a
-
+**Fabian Feiler** [Github Profile] (https://github.com/fabianfeiler)
 ---
 
 _Developed for Samfundet i Ås at Ås_
