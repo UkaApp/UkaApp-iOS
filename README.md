@@ -94,12 +94,12 @@ Products -> Test or CMD + U
 ### 👥 Collaborator(s)
 
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)  
-**Luna** [Github Profile] (https://github.com/lunagudem)  
+**Luna** [Github Profile](https://github.com/lunagudem)  
 **Kirsti Einang** [GitHub Profile](https://github.com/kirstieinang)  
 **Sara Gjerløw** [GitHub Profile](https://github.com/SaraGjerlow)  
 **Mathias Gundersen** [GitHub Profile](https://github.com/saltonese)  
-**Fabian Feiler** [Github Profile] (https://github.com/fabianfeiler)  
-**Camilla Øye** [Github Profile] (https://github.com/CamillaSivertsen)  
+**Fabian Feiler** [Github Profile](https://github.com/fabianfeiler)  
+**Camilla Øye** [Github Profile](https://github.com/CamillaSivertsen)  
 
 ---
 
