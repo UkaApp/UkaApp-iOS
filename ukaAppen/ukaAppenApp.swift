@@ -25,7 +25,7 @@ struct ukaAppenApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
         .modelContainer(sharedModelContainer)
     }
