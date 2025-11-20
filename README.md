@@ -102,4 +102,4 @@ Products -> Test or CMD + U
 
 ---
 
-_Developed for Samfundet i Ås at Ås_
+_Developed for Samfunnet i Ås at Ås_
