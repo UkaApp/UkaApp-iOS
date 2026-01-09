@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Poppins-BoldItalic.ttf</string>
+		<string>DMSans-Regular.ttf</string>
 		<string>Blenny_Trial_Blk.ttf</string>
 	</array>
 </dict>
