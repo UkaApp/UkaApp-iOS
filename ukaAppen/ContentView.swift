@@ -17,6 +17,7 @@ struct ContentView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        NavigationStack {
             ZStack {
                 Color("UKAOrange")
                     .ignoresSafeArea()
@@ -34,8 +35,9 @@ struct ContentView: View {
                             updateCountdown()
                         }
                     
-                    Button(action: {
-                    }) {
+                    NavigationLink {
+                        HomeEntryView()
+                    } label: {
                         Text("Trykk her")
                             .font(.custom("DMSans-Regular", size: 30))
                             .padding()
@@ -52,7 +54,7 @@ struct ContentView: View {
                 }
             }
         }
-        
+    }
         func updateCountdown() {
             let now = Date()
             let diff = targetDate.timeIntervalSince(now)
@@ -72,4 +74,5 @@ struct ContentView: View {
     #Preview {
         ContentView()
     }
+    
 
