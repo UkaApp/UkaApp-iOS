@@ -23,11 +23,11 @@ struct ContentView: View {
                 
                 VStack(spacing: 40) {
                     Text("Tid igjen til UKA!")
-                        .font(.custom("BlennyTrial-Black", size: 40))
+                        .font(.custom("Poppins-BoldItalic", size: 40))
                         .foregroundColor(Color("NeutralCream"))
                     
                     Text(timeRemaining)
-                        .font(.custom("BlennyTrial-Black", size: 40))
+                        .font(.custom("DMSans-Regular", size: 40))
                         .monospacedDigit()
                         .foregroundColor(Color("NeutralCream"))
                         .onReceive(timer) { _ in
@@ -37,7 +37,7 @@ struct ContentView: View {
                     Button(action: {
                     }) {
                         Text("Trykk her")
-                            .font(.custom("BlennyTrial-Black", size: 30))
+                            .font(.custom("DMSans-Regular", size: 30))
                             .padding()
                             .frame(maxWidth: .infinity)
                             .background(Color("NeutralCream"))
