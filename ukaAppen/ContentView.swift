@@ -36,7 +36,7 @@ struct ContentView: View {
                         }
                     
                     NavigationLink {
-                        HomeEntryView()
+                        PushNotificationsView()
                     } label: {
                         Text("Trykk her")
                             .font(.custom("DMSans-Regular", size: 30))
