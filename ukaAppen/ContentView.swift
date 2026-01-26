@@ -23,12 +23,12 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 40) {
-                    Text("Tid igjen til UKA!")
+                    Text("UKA i Ås!")
                         .font(.custom("Poppins-BoldItalic", size: 40))
                         .foregroundColor(Color("NeutralCream"))
                     
                     Text(timeRemaining)
-                        .font(.custom("DMSans-Regular", size: 40))
+                        .font(.custom("DMSans-Bold", size: 40))
                         .monospacedDigit()
                         .foregroundColor(Color("NeutralCream"))
                         .onReceive(timer) { _ in
@@ -39,7 +39,7 @@ struct ContentView: View {
                         PushNotificationsView()
                     } label: {
                         Text("Trykk her")
-                            .font(.custom("DMSans-Regular", size: 30))
+                            .font(.custom("DMSans-Bold", size: 30))
                             .padding()
                             .frame(maxWidth: .infinity)
                             .background(Color("NeutralCream"))
