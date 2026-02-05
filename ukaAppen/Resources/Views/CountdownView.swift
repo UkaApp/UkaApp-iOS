@@ -8,10 +8,11 @@
 import SwiftUI
 import Combine
 
-struct CountdownView: View {
 
+struct CountdownView: View {
+    
     // Choose date for countdown
-    let targetDate = Calendar.current.date(from: DateComponents(
+    private let targetDate = Calendar.current.date(from: DateComponents(
         year: 2026, month: 10, day: 10, hour: 0, minute: 0, second: 0
     ))!
 
@@ -114,23 +115,9 @@ private struct CountdownNumber: View {
         Text(String(format: "%02d", value))
             .font(.custom("Poppins-BoldItalic", size: 44))
     }
-        func updateCountdown() {
-            let now = Date()
-            let diff = targetDate.timeIntervalSince(now)
-            
-            if diff > 0 {
-                let days = Int(diff) / 86400
-                let hours = (Int(diff) % 86400) / 3600
-                let minutes = (Int(diff) % 3600) / 60
-                let seconds = Int(diff) % 60
-                timeRemaining = String(format: "%02d:%02d:%02d:%02d", days, hours, minutes, seconds)
-            } else {
-                timeRemaining = "Endelig UKA!!!"
-            }
-        }
-    }
+}
     
-    #Preview {
-        CountdownView()
-    }
+#Preview {
+    CountdownView()
+}
     
