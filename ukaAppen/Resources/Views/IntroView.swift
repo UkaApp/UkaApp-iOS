@@ -4,10 +4,11 @@
 //
 //  Created by Marte Tangen on 29/01/2026.
 //
-
 import SwiftUI
 
 struct IntroView: View {
+    var onNext: (() -> Void)? = nil
+    
     var body: some View {
         ZStack {
             Color("UKAOrange")
@@ -64,5 +65,5 @@ struct IntroView: View {
        
 
 #Preview {
-    IntroView()
+    IntroView(onNext: {})
 }
