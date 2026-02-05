@@ -9,13 +9,10 @@ import Foundation
 import SwiftUI
 
 struct SplashView: View {
-    @State private var shouldNavigate = false
 
     var body: some View {
         Group {
-            if shouldNavigate {
-                CountdownView()
-            } else {
+          
                 VStack {
                     Text("Powered by:")
                         .font(.largeTitle)
@@ -27,14 +24,8 @@ struct SplashView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color("UKAOrange"))
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        withAnimation {
-                            shouldNavigate = true
-                        }
-                    }
-                }
-            }
+                
+            
         }
     }
 }
