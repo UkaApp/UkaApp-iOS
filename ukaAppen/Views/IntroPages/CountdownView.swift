@@ -11,10 +11,8 @@ import Combine
 
 struct CountdownView: View {
     
-    // Choose date for countdown
-    private let targetDate = Calendar.current.date(from: DateComponents(
-        year: 2026, month: 10, day: 10, hour: 0, minute: 0, second: 0
-    ))!
+    let targetDate: Date
+    @Binding var showCountdown: Bool
 
     @State private var days = 0
     @State private var hours = 0
@@ -53,11 +51,27 @@ struct CountdownView: View {
 
                 // Nedtelling (4 kolonner)
                 if isFinished {
-                    Text("Endelig UKA!!!")
-                        .font(.custom("DMSans-Bold", size: 30))
-                        .foregroundColor(Color("NeutralCream"))
+                    VStack{
+                        Text("Endelig UKA!!!")
+                            .font(.custom("DMSans-Bold", size: 30))
+                            .foregroundColor(Color("NeutralCream"))
+                        
+                        Button {
+                            showCountdown = false
+                        } label: {
+                            Text("Gå til App")
+                                .font(.custom("DMSans-Regular", size: 20))
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color("NeutralCream"))
+                                .foregroundColor(Color("UKAOrange"))
+                                .cornerRadius(12)
+                        }
+                    }
+                    
+                    
                 } else {
-                    HStack(spacing: 30) {
+                    HStack(spacing: 20) {
                         VStack{
                             CountdownNumber(value: days)
                             Text("Dager")
@@ -88,6 +102,20 @@ struct CountdownView: View {
                 }
 
                 Spacer().frame(height: 50)
+                
+                //DELE ME LATER
+                Button {
+                    showCountdown = false
+                } label: {
+                    Text("Jukseknapp, så vi skal slippe å vente")
+                        .font(.custom("DMSans-Regular", size: 20))
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color("NeutralCream"))
+                        .foregroundColor(Color("UKAOrange"))
+                        .cornerRadius(12)
+                }
+                //Delete to this
 
                 // Presentert av + logo nederst
                 VStack(spacing: 14) {
@@ -107,6 +135,9 @@ struct CountdownView: View {
             .padding(.horizontal, 24)
             .onAppear { updateCountdown() }
             .onReceive(timer) { _ in updateCountdown() }
+            
+            
+            
         }
     }
 
@@ -138,6 +169,15 @@ private struct CountdownNumber: View {
 }
     
 #Preview {
-    CountdownView()
+    CountdownView(
+        targetDate: Calendar.current.date(from: DateComponents(
+            year: 2026,
+            month: 10,
+            day: 10,
+            hour: 0,
+            minute: 0,
+            second: 0
+        ))!,
+        showCountdown: .constant(true)
+    )
 }
-    
