@@ -13,63 +13,56 @@ struct IntroView: View {
         ZStack {
             Color("UKAOrange")
                 .ignoresSafeArea()
-    
-            VStack(spacing: 0) {
-                // Top label
+            
+            VStack(spacing: 24) {
                 
                 Spacer()
                 
-                VStack(spacing: 10) {
-                    Text("UKA I ÅS")
-                        .font(.custom("Poppins-BoldItalic", size: 60))
-                        .italic()
-                        .foregroundStyle(Color("NeutralCream"))
+                VStack(spacing: 8) {
+                    Text("UKA i Ås")
+                        .font(.custom("Poppins-BoldItalic", size:60))
+                        .foregroundColor(Color("NeutralCream"))
                     
                     Text("2026")
-                        .font(.custom("Poppins-BoldItalic", size: 40))
-                        .fontWeight(.semibold)
-                        .italic()
-                        .foregroundStyle(Color("NeutralCream"))
+                        .font(.custom("DMSans-Bold", size: 40))
+                        .foregroundColor(Color("NeutralCream"))
                 }
                 
                 Spacer()
                 
-                // CTA Button
-                Button {
-                    onNext?()
-                } label: {
-                    Text("Neste side")
-                        .font(.custom("DMSans-Regular", size: 35))
-                        .fontWeight(.semibold)
-                        .foregroundStyle(Color("UKAOrange"))
-                        .padding(.vertical, 18)
-                        .frame(maxWidth: 280)
-                        .background(Color("NeutralCream"))
-                        .clipShape(Capsule())
-                        .shadow(color: .black.opacity(0.20), radius: 10, x: 0, y: 6)
-                }
-                .padding(.bottom, 56)
-                
-                // Presented by + logo
-                VStack(spacing: 10) {
-                    Text("Presentert av")
-                        .font(.custom("DMSans-Bold", size: 16))
-                        .fontWeight(.semibold)
-                        .foregroundStyle(Color("NeutralCream").opacity(0.9))
+                Button(action: {
                     
-                    // Bytt "uka_logo" til navnet på logo-asseten din (Image Set i Assets)
-                    Image("main_sponsor_img")
+                    //naviger til neste skjerm
+                }) {
+                    Text("Neste side")
+                        .font(.custom("DMSans-Bold", size: 30))
+                        .foregroundColor(Color("UKAOrange"))
+                        .padding(.horizontal, 60)
+                        .padding(.vertical, 20)
+                        .background(Color("NeutralCream"))
+                        .cornerRadius(30)
+                        .shadow(radius: 4)
+                }
+                
+                Spacer()
+                
+                VStack(spacing: 30) {
+                    Text("Presentert av")
+                        .font(.custom("DMSans-Regular", size: 20))
+                        .foregroundColor(Color("NeutralCream"))
+                    
+                    Image("sponsor_logo")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 80, height: 40)
-                        .accessibilityLabel("main_sponsor_img")
+                        .frame(height: 32)
                 }
-                .padding(.bottom, 28)
             }
-            .padding(.horizontal, 24)
+            .padding()
         }
     }
 }
+                
+       
 
 #Preview {
     IntroView(onNext: {})

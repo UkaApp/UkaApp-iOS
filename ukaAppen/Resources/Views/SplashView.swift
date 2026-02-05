@@ -14,7 +14,7 @@ struct SplashView: View {
     var body: some View {
         Group {
             if shouldNavigate {
-                ContentView()
+                CountdownView()
             } else {
                 VStack {
                     Text("Powered by:")
@@ -26,7 +26,7 @@ struct SplashView: View {
                         .frame(width: 200)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color(hex: "#FF8D00"))
+                .background(Color("UKAOrange"))
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         withAnimation {
@@ -37,4 +37,8 @@ struct SplashView: View {
             }
         }
     }
+}
+
+#Preview {
+    SplashView()
 }
