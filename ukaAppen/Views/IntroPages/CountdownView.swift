@@ -49,7 +49,7 @@ struct CountdownView: View {
                     .font(.custom("DMSans-Bold", size: 22))
                     .foregroundColor(Color("NeutralCream"))
 
-                Spacer().frame(height: 20)
+                Spacer().frame(height: 30)
 
                 // Nedtelling (4 kolonner)
                 if isFinished {
@@ -57,17 +57,37 @@ struct CountdownView: View {
                         .font(.custom("DMSans-Bold", size: 30))
                         .foregroundColor(Color("NeutralCream"))
                 } else {
-                    HStack(spacing: 36) {
-                        CountdownNumber(value: days)
-                        CountdownNumber(value: hours)
-                        CountdownNumber(value: minutes)
-                        CountdownNumber(value: seconds)
+                    HStack(spacing: 30) {
+                        VStack{
+                            CountdownNumber(value: days)
+                            Text("Dager")
+                                .font(.custom("DMSans-SemiBold", size: 15))
+                                .foregroundColor(Color("NeutralCream"))
+                        }
+                        VStack{
+                            CountdownNumber(value: hours)
+                            Text("Timer")
+                                .font(.custom("DMSans-SemiBold", size: 15))
+                                .foregroundColor(Color("NeutralCream"))
+                        }
+                        VStack{
+                            CountdownNumber(value: minutes)
+                            Text("Minutter")
+                                .font(.custom("DMSans-SemiBold", size: 15))
+                                .foregroundColor(Color("NeutralCream"))
+                        }
+                        VStack{
+                            CountdownNumber(value: seconds)
+                            Text("Sekunder")
+                                .font(.custom("DMSans-SemiBold", size: 15))
+                                .foregroundColor(Color("NeutralCream"))
+                        }
                     }
                     .foregroundColor(Color("NeutralCream"))
                     .monospacedDigit()
                 }
 
-                Spacer()
+                Spacer().frame(height: 50)
 
                 // Presentert av + logo nederst
                 VStack(spacing: 14) {

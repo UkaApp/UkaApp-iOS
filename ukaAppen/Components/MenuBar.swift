@@ -22,7 +22,7 @@ struct MenuBar: View {
                 .font(.system(size: 22, weight: .semibold))
             menuButton(icon: "map", tab: .map)
                 .font(.system(size: 22, weight: .semibold))
-            // menuButton(icon: "ticket.fill", tab: .tickets)
+            menuButton(icon: "gamecontroller", tab: .game)
             // menuButton(icon: "bell.fill", tab: .notifications)
             // menuButton(icon: "person.fill", tab: .profile)
         }

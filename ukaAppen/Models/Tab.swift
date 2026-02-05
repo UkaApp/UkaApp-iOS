@@ -11,6 +11,6 @@ enum Tab {
     case program
     case transport
     case map
-    //case notifications
+    case game
     //case profile
 }

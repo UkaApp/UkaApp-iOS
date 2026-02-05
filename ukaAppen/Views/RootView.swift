@@ -49,8 +49,8 @@ struct RootView: View {
         case .map:
             MapView()
 
-        //case .tickets:
-        //    TicketsView()
+        case .game:
+            GameView()
 
         //case .notifications:
         //    NotificationsView()
