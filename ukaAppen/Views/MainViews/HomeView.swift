@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct homeView: View {
+struct HomeView: View {
     var body: some View {
         ZStack {
-            Color("UKAOrange").ignoresSafeArea()
             
             //Logo tekst
             VStack() {
@@ -29,12 +28,6 @@ struct homeView: View {
                     .padding(.horizontal, 16)
             }
             
-            //Menylinje
-            VStack {
-                Spacer()
-                BottomMenu(selectedIndex: $selectedIndex)
-            }
-            .ignoresSafeArea(edges: .bottom)
             
             
 
@@ -44,5 +37,5 @@ struct homeView: View {
 
 
 #Preview {
-    homeView()
+    HomeView()
 }

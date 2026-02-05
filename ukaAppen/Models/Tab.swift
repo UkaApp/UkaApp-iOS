@@ -9,7 +9,8 @@
 enum Tab {
     case home
     case program
-    case tickets
-    case notifications
-    case profile
+    case transport
+    case map
+    //case notifications
+    //case profile
 }
