@@ -12,5 +12,5 @@ enum Tab: CaseIterable {
     case transport
     case map
     case game
-    //case profile
+    case settings
 }

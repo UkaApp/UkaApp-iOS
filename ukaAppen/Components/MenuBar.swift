@@ -23,7 +23,9 @@ struct MenuBar: View {
             menuButton(icon: "map", tab: .map)
                 .font(.system(size: 22, weight: .semibold))
             menuButton(icon: "gamecontroller", tab: .game)
-            // menuButton(icon: "bell.fill", tab: .notifications)
+                .font(.system(size: 22, weight: .semibold))
+            menuButton(icon: "gear", tab: .settings)
+                .font(.system(size: 22, weight: .semibold))
             // menuButton(icon: "person.fill", tab: .profile)
         }
         .frame(height: 100)

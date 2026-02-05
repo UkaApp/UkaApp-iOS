@@ -76,8 +76,8 @@ struct RootView: View {
         case .game:
             GameView()
 
-        //case .notifications:
-        //    NotificationsView()
+        case .settings:
+            SettingsView()
 
         //case .profile:
         //    ProfileView()
