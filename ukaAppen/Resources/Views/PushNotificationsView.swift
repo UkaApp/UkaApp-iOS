@@ -10,22 +10,22 @@ import SwiftUI
 struct PushNotificationsView: View {
     var body: some View {
         ZStack {
-            // Bakgrunn i oransje, fyller hele skjermen
             Color("UKAOrange")
                 .ignoresSafeArea()
-        
-        VStack(alignment: .leading, spacing: 40) {
-            Text("Ikke gå glipp av noe!")
-                .font(.custom("DMSans-Bold", size: 27))
-                .foregroundColor(Color("NeutralCream"))
-            
-            Text("Med push-varsler får du påminnelser om konserter og viktige hendelser under UKA.")
-                .font(.custom("DMSans-Regular", size: 20))
-                .foregroundColor(Color("NeutralCream"))
-                .multilineTextAlignment(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                
+
+            VStack(alignment: .leading, spacing: 40) {
+                Text("Ikke gå glipp av noe!")
+                    .font(.custom("DMSans-Bold", size: 27))
+                    .foregroundColor(Color("NeutralCream"))
+
+                Text("Med push-varsler får du påminnelser om konserter og viktige hendelser under UKA.")
+                    .font(.custom("DMSans-Regular", size: 20))
+                    .foregroundColor(Color("NeutralCream"))
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
                 Button {
+                    // TODO: request notification permission
                 } label: {
                     Text("Ja takk, send meg varslinger")
                         .font(.custom("DMSans-Regular", size: 20))
@@ -34,8 +34,6 @@ struct PushNotificationsView: View {
                         .background(Color("NeutralCream"))
                         .foregroundColor(Color("UKAOrange"))
                         .cornerRadius(12)
-                        .padding(.horizontal)
-                    
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -43,10 +41,10 @@ struct PushNotificationsView: View {
         }
     }
 }
-    
-    #Preview {
-        NavigationStack {
-            PushNotificationsView()
-        }
+
+#Preview {
+    NavigationStack {
+        PushNotificationsView()
     }
+}
 
