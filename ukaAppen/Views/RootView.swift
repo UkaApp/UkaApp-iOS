@@ -17,14 +17,19 @@ struct RootView: View {
             Color("UKAOrange")
                 .ignoresSafeArea()
             
-            content
-                    .frame(maxWidth: .infinity,
-                           maxHeight: .infinity,
-                           alignment: .top)
+            ZStack {
+                content
+            }
+                .frame(maxWidth: .infinity,
+                        maxHeight: .infinity,
+                        alignment: .top)
+                .transition(.opacity)
+                .animation(.easeInOut(duration: 0.15), value: appState.selectedTab)
             
             .safeAreaInset(edge: .bottom) {
                 MenuBar()
             }
+            .animation(nil, value: appState.selectedTab)
         }
         
     }
