@@ -36,25 +36,27 @@ struct RootView: View {
     }
     
     private var mainApp: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
+
             Color("UKAOrange")
                 .ignoresSafeArea()
-            
-            ZStack {
-                content
-            }
-            .frame(maxWidth: .infinity,
-                   maxHeight: .infinity,
-                   alignment: .top)
-            .transition(.opacity)
-            .animation(.easeInOut(duration: 0.15), value: appState.selectedTab)
-            
-            .safeAreaInset(edge: .bottom) {
-                MenuBar()
-            }
-            .animation(nil, value: appState.selectedTab)
+
+            content
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    handleSwipe(value: value)
+                }
+        )
+        .safeAreaInset(edge: .bottom) {
+            MenuBar()
+        }
+        .animation(nil, value: appState.selectedTab)
+    
     }
+
 
     @ViewBuilder
     private var content: some View {
@@ -79,6 +81,36 @@ struct RootView: View {
 
         //case .profile:
         //    ProfileView()
+        }
+    }
+    
+    private func handleSwipe(value: DragGesture.Value) {
+        let threshold: CGFloat = 50
+
+        if value.translation.width < -threshold {
+            goToNextTab()
+        }
+
+        if value.translation.width > threshold {
+            goToPreviousTab()
+        }
+    }
+    
+    private func goToNextTab() {
+        guard let index = Tab.allCases.firstIndex(of: appState.selectedTab),
+              index < Tab.allCases.count - 1 else { return }
+
+        withAnimation(.easeInOut) {
+            appState.selectedTab = Tab.allCases[index + 1]
+        }
+    }
+
+    private func goToPreviousTab() {
+        guard let index = Tab.allCases.firstIndex(of: appState.selectedTab),
+              index > 0 else { return }
+
+        withAnimation(.easeInOut) {
+            appState.selectedTab = Tab.allCases[index - 1]
         }
     }
 }

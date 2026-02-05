@@ -6,7 +6,7 @@
 //
 
 
-enum Tab {
+enum Tab: CaseIterable {
     case home
     case program
     case transport
