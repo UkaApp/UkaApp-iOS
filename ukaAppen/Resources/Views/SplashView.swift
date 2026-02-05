@@ -14,7 +14,7 @@ struct SplashView: View {
     var body: some View {
         Group {
             if shouldNavigate {
-                ContentView()
+                CountdownView()
             } else {
                 VStack {
                     Text("Powered by:")
@@ -37,4 +37,8 @@ struct SplashView: View {
             }
         }
     }
+}
+
+#Preview {
+    SplashView()
 }

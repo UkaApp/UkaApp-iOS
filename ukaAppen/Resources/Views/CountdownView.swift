@@ -114,8 +114,23 @@ private struct CountdownNumber: View {
         Text(String(format: "%02d", value))
             .font(.custom("Poppins-BoldItalic", size: 44))
     }
-}
-
-#Preview {
-    CountdownView()
-}
+        func updateCountdown() {
+            let now = Date()
+            let diff = targetDate.timeIntervalSince(now)
+            
+            if diff > 0 {
+                let days = Int(diff) / 86400
+                let hours = (Int(diff) % 86400) / 3600
+                let minutes = (Int(diff) % 3600) / 60
+                let seconds = Int(diff) % 60
+                timeRemaining = String(format: "%02d:%02d:%02d:%02d", days, hours, minutes, seconds)
+            } else {
+                timeRemaining = "Endelig UKA!!!"
+            }
+        }
+    }
+    
+    #Preview {
+        CountdownView()
+    }
+    
