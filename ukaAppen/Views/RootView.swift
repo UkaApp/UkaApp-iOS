@@ -79,8 +79,8 @@ struct RootView: View {
         case .settings:
             SettingsView()
 
-        //case .profile:
-        //    ProfileView()
+        case .weather:
+            WeatherView()
         }
     }
     

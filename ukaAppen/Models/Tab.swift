@@ -12,5 +12,7 @@ enum Tab: CaseIterable {
     case transport
     case map
     case game
+    case weather
     case settings
+    
 }

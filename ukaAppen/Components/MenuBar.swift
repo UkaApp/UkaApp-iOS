@@ -24,9 +24,11 @@ struct MenuBar: View {
                 .font(.system(size: 22, weight: .semibold))
             menuButton(icon: "gamecontroller", tab: .game)
                 .font(.system(size: 22, weight: .semibold))
+            menuButton(icon: "cloud.drizzle", tab: .weather)
+                .font(.system(size: 22, weight: .semibold))
             menuButton(icon: "gear", tab: .settings)
                 .font(.system(size: 22, weight: .semibold))
-            // menuButton(icon: "person.fill", tab: .profile)
+            
         }
         .frame(height: 100)
         .background(Color("UKAOrange"))
