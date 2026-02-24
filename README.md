@@ -6,15 +6,16 @@ App developed for Uka i Ås
 
 # 📥 Download & Run
 
-Currently not available
-Will be published at appstore
-Will be realeased as a public git 
+Currently not available  
+Will be published at appstore  
+Available as a public Github repository
 
 
-## ✅ Run the Game
+## ✅ Run the App
 
 ```bash
-  python src/main.py
+  🏗️ Currently not availeble
+  Download on appstore
 ```
 
 # 🛠️ Development
@@ -23,7 +24,7 @@ Will be realeased as a public git
 
 ```bash
 git clone git@github.com:kasper280403/UkaApp-iOS.git
-cd /path/to/folder/UkaApp
+cd /path/to/folder/UkaApp-iOS
 ```
 
 ## 📋 Ruleset 
@@ -40,14 +41,25 @@ Products -> Test or CMD + U
 ## 🧱 Project Structure
 ```
 .
+├── DeveloperReadme.md
 ├── README.md
-├── ukaAppen
+├── ukaAppen (Code goes here)
 │   ├── Assets.xcassets
 │   │   ├── AccentColor.colorset
 │   │   │   └── Contents.json
 │   │   ├── AppIcon.appiconset
+│   │   │   ├── appstore.png
 │   │   │   └── Contents.json
+│   │   ├── AppIcons
+│   │   │   ├── appstore.imageset
+│   │   │   │   ├── appstore.png
+│   │   │   │   └── Contents.json
+│   │   │   ├── Contents.json
+│   │   │   └── playstore.imageset
+│   │   │       ├── Contents.json
+│   │   │       └── playstore.png
 │   │   └── Contents.json
+│   ├── Colors.swift
 │   ├── ContentView.swift
 │   ├── Item.swift
 │   └── ukaAppenApp.swift
@@ -65,9 +77,9 @@ Products -> Test or CMD + U
 │       └── kasperkarlsen.xcuserdatad
 │           └── xcschemes
 │               └── xcschememanagement.plist
-├── ukaAppenTests
+├── ukaAppenTests (Test goes here)
 │   └── ukaAppenTests.swift
-└── ukaAppenUITests
+└── ukaAppenUITests (UI tests goes here)
     ├── ukaAppenUITests.swift
     └── ukaAppenUITestsLaunchTests.swift
 ```
@@ -75,14 +87,16 @@ Products -> Test or CMD + U
 ---
 ## 👤 Admin(s)
 
-**Kasper S. Karlsen**  
-[GitHub Profile](https://github.com/kasper280403)
+**Kasper S. Karlsen** [GitHub Profile](https://github.com/kasper280403)
 
 ---
 
 ### 👥 Collaborator(s)
 
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)
+**Luna** [Github Profile] (https://github.com/lunagudem)
+**Sara Gjerløw** [GitHub Profile](https://github.com/SaraGjerlow)
+**Fabian Feiler** [Github Profile] (https://github.com/fabianfeiler)
 
 ---
 

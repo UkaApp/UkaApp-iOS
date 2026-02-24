@@ -83,12 +83,11 @@
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/org/project.git
+   git clone git@github.com:kasper280403/UkaApp-iOS.git
    ```
 2. **Open the project in Xcode**  
-3. **Install dependencies** (if using CocoaPods, SPM, etc.)  
-4. **Build and run**  
-5. Verify setup by running tests:  
+3. **Build and run**  
+4. Verify setup by running tests:  
    ```bash
    CMD + U
    ```
@@ -100,8 +99,7 @@
 ### General
 - Follow **Swift API Design Guidelines**.  
 - Use **camelCase** for variables and functions.  
-- Use **PascalCase** for types, classes, structs, and enums.  
-- Use **4 spaces** for indentation (no tabs).  
+- Use **PascalCase** for types, classes, structs, and enums.    
 - Keep lines **under 100 characters**.  
 - Always include **access control modifiers** (`public`, `private`, etc.) where appropriate.  
 
@@ -126,6 +124,7 @@
 ### Files and Structure
 - One type (class, struct, enum) per file.  
 - The file name should **match the main type**.  
+- Use `indentation` not 4 whitespaces
 - Group related code using `// MARK:` sections.  
 
 **Example:**
